@@ -1,0 +1,69 @@
+<app-a-navbar></app-a-navbar>
+<!-- main content-->
+<div class="flex">
+    <!--Sidebar-->
+    <app-a-sidebar></app-a-sidebar>
+    <main class="flex-1 bg-slate-200">
+        <div class="container mx-auto px-10 pt-10 pb-10">
+            <div class="max-w-full bg-white pt-10 justify-center items-center text-center flex">
+              
+                <!--Details-->
+                <div class=" w-auto text-sm  font-bold leading-6 bg-stripes-fuchsia rounded-lg block">  
+                    <h1 class="">Add Doctor</h1>
+                    <div class="flex items-center justify-center py-8 px-1 ">
+                        <div class="container max-w-md block bg-lime-400 p-10">
+                            <form [formGroup]="form" (ngSubmit)="signup()">
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Email</label>
+                                    <input type="email" formControlName="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" [email]="true" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Password</label>
+                                    <input type="password" formControlName="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Fisrt Name</label>
+                                    <input type="text" formControlName="firstName" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Last Name</label>
+                                    <input type="text" formControlName="lastName" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"/>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Phone Number</label>
+                                    <input type="text" formControlName="phoneNumber" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Specialist</label>
+                                    <input type="text" formControlName="specialist" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                                </div>
+                                <div class="mb-2">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">City</label>
+                                    <input type="text" formControlName="location" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                                </div>
+                                <div class="mb-2 inline-flex">
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text pr-2">Male</label>
+                                    <input type="radio" formControlName="gender" value="male" />
+                                    <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text pl-2 pr-2">Female</label>
+                                    <input type="radio" formControlName="gender" value="female" />
+                                </div>
+                                
+                                <div>
+                                    <div *ngIf="msg" class="inline-block my-2">
+                                        <p class="text-white">{{ msg }}</p>
+                                    </div>
+                                    <button [disabled]="!form.valid" class="flex justify-center bg-blue-500 p-2 w-full rounded-3xl" type="submit" value="submit">Submit</button>
+                                </div>    
+                            </form>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>                 
+    </main>
+
+</div>
+
+

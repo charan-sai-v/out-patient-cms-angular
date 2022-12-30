@@ -1,0 +1,168 @@
+<!--Navbar-->
+<app-d-navbar></app-d-navbar>
+<!-- main content-->
+<div class="flex">
+    <!--Sidebar-->
+    <app-d-sidebar></app-d-sidebar>
+    <main class="flex-1 bg-slate-200">
+      <!--Loading..-->
+      <!-- <div class="flex justify-center items-center">
+        <div class="spinner-border animate-spin inline-block h-8 border-4 rounded-full" role="status">
+         <i class="fi fi-rs-rotate-right"></i>
+        </div>
+      </div> -->
+
+      <div class="container mx-auto px-20 pt-10 pb-10">
+        <div class="grid grid-cols-2 gap-4  text-sm  font-bold leading-6 bg-stripes-fuchsia rounded-lg ">
+            <!--Medication--> 
+            <div class="flex items-center justify-center py-8 px-1 ">
+                <div class="md:w-full rounded-md shadow-lg p-5 bg-white">
+                    <h1 class="pt-2 pb-7 text-gray-800 font-bold text-lg">Next Schedule</h1>
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 flex items-center justify-center rounded-md bg-purple-200">
+                              <i class="fi fi-rr-user"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm font-medium pl-3 mb-4">Charan Sai</p>
+                            
+                        </div>
+                        
+                        <i class="fi fi-sr-arrow-right mr-6"></i>
+                    </div>   
+                    <p class="text-gray-400 text-sm font-normal -mt-6 mb-2 pl-16">Today 10:00 - 10:10 AM</p>
+                    <hr>
+
+                    <div class="flex items-center justify-between pt-5 -mt-2">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 flex items-center justify-center bg-green-200">
+                              <i class="fi fi-rr-user"></i>
+                            </div>
+                            <p class="text-gray-600 text-sm font-medium pl-3 mb-4">Mohan Sai Teja</p>                        </div>
+                        <i class="fi fi-sr-arrow-right mr-6"></i>
+                    </div>
+                    <p class="text-gray-400 text-sm font-normal -mt-5 mb-2 pl-16">Today 10:11 - 10:20 AM</p>
+                    <div class="flex items-center">
+                        <p class="text-blue-500">View All</p>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+
+            
+
+             <!--Treated--> 
+             <div class="flex  justify-center py-8 px-1 ">
+                <div class="md:w-full rounded-md shadow-lg p-5 bg-white">
+                    <h1 class="text-center pt-2 pb-5 text-gray-800 font-bold text-lg">Total Patients Treated</h1>
+                    <div class="inline text-center items-center pl-32">
+                      <i class="fi fi-sr-users inline text pr-3 text-center text-3xl ml-20"></i>
+                      <p class="text-center text-3xl font-normal inline">120</p>
+                    </div>
+                    
+
+                    <h1 class="text-center pt-4 pb-5 text-gray-800 font-bold text-lg">Total Review</h1>
+                    <div class="text-center">
+                      <div class="inline">
+                        <i class="fi fi-sr-star inline pr-4 text-yellow-300 text-lg font-medium"></i>
+                      </div>
+                      <p class="text-center text-3xl font-normal inline ">4.3</p>     
+                    </div>
+                                   
+                </div>
+            </div>
+
+            
+            
+        </div>
+    
+        <!--Recent Activity-->
+        <div class=" w-auto text-sm  font-bold leading-6 bg-stripes-fuchsia rounded-lg ">  
+            <div class="flex items-center justify-center py-8 px-1 ">
+                <div class="md:min-w-full rounded-md shadow-lg p-5 bg-white">
+                    <h1 class="pt-2 pb-5 text-gray-800 font-bold text-lg">Recent Activity</h1>
+                        <hr/>
+                        <div class="flex flex-col">
+                            <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                              <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="overflow-x-auto">
+                                  <table class="min-w-full">
+                                    <thead class="border-b">
+                                      <tr>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                          #
+                                        </th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                          Type
+                                        </th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                          Name
+                                        </th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                          Date
+                                        </th>
+                                        <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                          Description
+                                        </th>
+                                        
+                                        
+                                        
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="border-b">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">1</td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Treatment
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Dr. Surya Kiran
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          17-09-2022
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          For treatment 
+                                          For treatment 
+                                          For treatment 
+                                          For treatment 
+                                          For treatment 
+                                          
+                                        </td>
+                                       
+                                      </tr>
+                                      
+                                      <tr class="bg-white border-b">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">3</td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Cell
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Cell
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Cell
+                                        </td>
+                                        <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                          Cell
+                                        </td>
+                                        
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    </main>
+
+</div>

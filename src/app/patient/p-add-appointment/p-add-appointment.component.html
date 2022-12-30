@@ -1,0 +1,53 @@
+<!--Navbar-->
+<app-p-navbar></app-p-navbar>
+
+<!-- main content-->
+<div class="flex">
+    <!--Sidebar-->
+    <app-p-siderbar></app-p-siderbar>
+    <main class="flex-1 bg-slate-200">
+        <div class="container mx-auto px-52 pt-10 pb-10">
+          <div class="max-w-full bg-white pt-10 justify-center items-center text-center flex">
+              
+            <!--Details-->
+            <div class=" w-auto text-sm  font-bold leading-6 bg-stripes-fuchsia rounded-lg block">  
+                <h1 class="">Add Doctor</h1>
+                <div class="flex items-center justify-center py-8 px-1 ">
+                    <div class="container max-w-md block bg-lime-400 p-10">
+                        <form [formGroup]="form" >
+                            <div class="mb-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Email</label>
+                                <input type="time" formControlName="appTime" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" [email]="true" />
+                            </div>
+                            <div class="mb-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Password</label>
+                                <input type="date" formControlName="appDate" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                            </div>
+                            <div class="mb-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Fisrt Name</label>
+                                <input type="text" formControlName="doctorId" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" />
+                            </div>
+                            <div class="mb-2">
+                                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 text">Last Name</label>
+                                <input type="text" formControlName="doctorName" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"/>
+                            </div>
+                           
+                            
+                            <div>
+                                <!-- <div *ngIf="msg" class="inline-block my-2">
+                                    <p class="text-white">{{ msg }}</p>
+                                </div> -->
+                                <button [disabled]="!form.valid" class="flex justify-center bg-blue-500 p-2 w-full rounded-3xl" type="submit" value="submit">Submit</button>
+                            </div>    
+                        </form>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        </div>                 
+    </main>
+
+</div>
+
